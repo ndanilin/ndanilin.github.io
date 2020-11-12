@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>
+		Тестовая отчётность
+	</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="data1.json" charset="utf-8"></script>
+	<script type="text/javascript" src="data2.json" charset="utf-8"></script>
+	<script type="text/javascript" src="data3.json" charset="utf-8"></script>
+	<script type="text/javascript" src="data4.json" charset="utf-8"></script>
+</head>
+
+<body style = "text-align:center;">
+
+	<h1 style = "color:green;">
+		Отчёт
+	</h1>
+
+	<p id = "GFG_UP" style =
+			"font-size: 15px; font-weight: bold;">
+	</p>
+	<select id="date">
+		<option>02.02.2020</option>
+		<option>05.12.2020</option>
+	</select>
+	<select id="source">
+		<option>Источник1</option>
+		<option>Источник2</option>
+	</select>
+	<button onclick = "GFG_FUN()">
+		Построить отчёт
+	</button>
+	<button onclick = "GFG_FUN_ERR()">
+		Выгрузить в PDF
+	</button>
+
+	<br><br>
+
+	<table id="table" align = "center" border="1px"></table>
+
+	<script src=index.js charset="utf-8">
+
+	</script>
+</body>
+
+</html> 
