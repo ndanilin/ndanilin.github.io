@@ -2,48 +2,55 @@
 <html>
 
 <head>
-	<title>
-		Тестовая отчётность
-	</title>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script type="text/javascript" src="data1.json" charset="utf-8"></script>
-	<script type="text/javascript" src="data2.json" charset="utf-8"></script>
-	<script type="text/javascript" src="data3.json" charset="utf-8"></script>
-	<script type="text/javascript" src="data4.json" charset="utf-8"></script>
+    <title>
+        Отчётность
+    </title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script charset="utf-8" src="data/data1.json" type="text/javascript"></script>
+    <script charset="utf-8" src="data/data2.json" type="text/javascript"></script>
+    <script charset="utf-8" src="data/data3.json" type="text/javascript"></script>
+    <script charset="utf-8" src="data/data4.json" type="text/javascript"></script>
 </head>
 
-<body style = "text-align:center;">
+<body style="text-align:center;">
 
-	<h1 style = "color:green;">
-		Отчёт
-	</h1>
+<h1 style="color:black;">
+    Тестовый отчёт
+</h1>
 
-	<p id = "GFG_UP" style =
-			"font-size: 15px; font-weight: bold;">
-	</p>
-	<select id="date">
-		<option>02.02.2020</option>
-		<option>05.12.2020</option>
-	</select>
-	<select id="source">
-		<option>Источник1</option>
-		<option>Источник2</option>
-	</select>
-	<button onclick = "GFG_FUN()">
-		Построить отчёт
-	</button>
-	<button onclick = "GFG_FUN_ERR()">
-		Выгрузить в PDF
-	</button>
+<span style="display:inline-block">
+    <label style="display:block">Дата отчёта</label>
+    <select id="date">
+        <option>02.02.2020</option>
+        <option>05.12.2020</option>
+    </select>
+</span>
+<span style="display:inline-block">
+<label style="display:block">Источник</label>
+    <select id="source">
+        <option>Источник1</option>
+        <option>Источник2</option>
+    </select>
+</span>
+<button onclick="loadReport()">
+    Построить отчёт
+</button>
+<button onclick="loadErr()">
+    Выгрузить в PDF
+</button>
 
-	<br><br>
+<br><br>
+<div id="table-wrapper">
+    <div id="table-scroll">
+        <table align="center" id="table"></table>
+    </div>
+</div>
 
-	<table id="table" align = "center" border="1px"></table>
+<script charset="utf-8" src=index.js>
 
-	<script src=index.js charset="utf-8">
-
-	</script>
+</script>
 </body>
 
 </html> 

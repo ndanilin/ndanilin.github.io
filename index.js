@@ -1,11 +1,8 @@
-var el_up = document.getElementById("GFG_UP");
 var date = document.getElementById("date");
 var source = document.getElementById("source");
 var list;
 
-el_up.innerHTML = "Тестовое задание для тестировщика<br><br>";
-
-function GFG_FUN() {
+function loadReport() {
     if (date.value === "02.02.2020" && source.value === "Источник1") {
         list = JSON.parse(data1);
     } else if (date.value === "05.12.2020" && source.value === "Источник1") {
@@ -15,7 +12,7 @@ function GFG_FUN() {
     } else if (date.value === "05.12.2020" && source.value === "Источник2") {
         list = JSON.parse(data4);
     } else {
-        list = [{"error":"Некорректные входные данные"}];
+        list = [{"error": "Некорректные входные данные"}];
     }
 
     var cols = [];
@@ -32,6 +29,7 @@ function GFG_FUN() {
 
     // Create a table element
     var table = document.createElement("table");
+    table.setAttribute('border', '1px');
 
     // Create table row tr element of a table
     var tr = table.insertRow(-1);
