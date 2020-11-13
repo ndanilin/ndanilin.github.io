@@ -2,6 +2,10 @@ var date = document.getElementById("date");
 var source = document.getElementById("source");
 var list;
 
+function resetStyle() {
+    source.style.borderColor = "black";
+}
+
 function loadReport() {
     if (date.value === "02.02.2020" && source.value === "Источник1") {
         list = JSON.parse(data1);
@@ -12,6 +16,7 @@ function loadReport() {
     } else if (date.value === "05.12.2020" && source.value === "Источник2") {
         list = JSON.parse(data4);
     } else if (source.value === "") {
+        source.style.borderColor = "red";
         list = [{"Не выбран источник": ""}];
     } else {
         list = [];
