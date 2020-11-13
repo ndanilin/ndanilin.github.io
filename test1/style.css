@@ -1,16 +1,27 @@
 #table-wrapper {
-    position:relative;
+    position: relative;
 }
+
 #table-scroll {
-    height:350px;
-    overflow:auto;
-    margin-top:20px;
+    height: 350px;
+    overflow: auto;
+    margin-top: 20px;
 }
+
 #table-wrapper table {
-    width:90%;
+    width: 90%;
 
 }
+
 #table-wrapper table * {
-    background:white;
-    color:black;
+    background: white;
+    color: black;
+}
+
+select:invalid {
+    color: gray;
+}
+
+option {
+    color: black;
 }

@@ -11,8 +11,11 @@ function loadReport() {
         list = JSON.parse(data3);
     } else if (date.value === "05.12.2020" && source.value === "Источник2") {
         list = JSON.parse(data4);
+    } else if (source.value === "") {
+        list = [{"Не выбран источник": ""}];
     } else {
-        list = [{"error": "Некорректные входные данные"}];
+        list = [];
+        console.error("Invalid input")
     }
 
     var cols = [];

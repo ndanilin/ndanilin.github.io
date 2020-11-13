@@ -16,20 +16,22 @@
 
 <body style="text-align:center;">
 
-<h1 style="color:black;">
+<h1>
     Тестовый отчёт
 </h1>
 
 <span style="display:inline-block">
     <label style="display:block">Дата отчёта</label>
-    <select id="date">
+    <select id="date" required>
+        <option value="" disabled selected hidden>Выберите дату...</option>
         <option>02.02.2020</option>
         <option>05.12.2020</option>
     </select>
 </span>
 <span style="display:inline-block">
 <label style="display:block">Источник</label>
-    <select id="source">
+    <select id="source" required>
+        <option value="" disabled selected hidden>Выберите источник...</option>
         <option>Источник1</option>
         <option>Источник2</option>
     </select>
