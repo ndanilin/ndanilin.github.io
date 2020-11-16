@@ -3,7 +3,7 @@
 }
 
 #table-scroll {
-    height: 350px;
+    height: 400px;
     overflow: auto;
     margin-top: 20px;
 }
@@ -22,7 +22,7 @@ option {
 }
 
 .form{
-    width: 180px;
+    width: 185px;
     height: 25px;
     border-style: solid;
     border-width: 2px;

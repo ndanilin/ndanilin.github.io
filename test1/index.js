@@ -8,7 +8,8 @@ function resetStyle() {
 }
 
 function validate(){
-    var err = document.createElement("label");
+    var err = document.createElement("div");
+    err.setAttribute("class", "alert alert-danger")
     err.innerText = "Не выбран источник";
     rootForTable.appendChild(err);
 }
