@@ -70,7 +70,7 @@ function loadReport() {
 
     // Create a table element
     var table = document.createElement("table");
-    table.setAttribute('border', '1px');
+    table.setAttribute('class', 'table table-bordered');
     table.setAttribute('align', 'center');
 
     // Create table row tr element of a table
