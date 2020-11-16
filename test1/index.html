@@ -22,7 +22,7 @@
 
 <span style="display:inline-block">
     <label style="display:block">Дата отчёта</label>
-    <select id="date" required>
+    <select id="date" required class="form">
         <option value="" disabled selected hidden>Выберите дату...</option>
         <option>02.02.2020</option>
         <option>05.12.2020</option>
@@ -30,14 +30,14 @@
 </span>
 <span style="display:inline-block">
 <label style="display:block">Источник</label>
-    <select id="source" onchange="resetStyle()" required>
+    <select id="source" onchange="resetStyle()" required class="form">
         <option value="" disabled selected hidden>Выберите источник...</option>
         <option>Источник1</option>
         <option>Источник2</option>
     </select>
 </span>
-<button onclick="loadReport()">Построить отчёт</button>
-<button onclick="loadErr()">Выгрузить в PDF</button>
+<button onclick="loadReport()" class="form">Построить отчёт</button>
+<button onclick="loadErr()" class="form">Выгрузить в PDF</button>
 
 <br><br>
 <div id="table-wrapper">

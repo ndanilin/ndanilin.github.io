@@ -13,11 +13,6 @@
 
 }
 
-#table-wrapper table * {
-    background: white;
-    color: black;
-}
-
 select:invalid {
     color: gray;
 }
@@ -26,14 +21,10 @@ option {
     color: black;
 }
 
-button{
+.form{
     width: 180px;
-    height: 26px;
-    border-width: 1px;
-}
-
-select{
-    width: 180px;
-    height: 26px;
-    border-width: 1px;
+    height: 25px;
+    border-style: solid;
+    border-width: 2px;
+    line-height: normal;
 }
