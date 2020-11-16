@@ -1,12 +1,21 @@
 var date = document.getElementById("date");
 var source = document.getElementById("source");
+var rootForTable = document.getElementById("table-scroll");
 var list;
 
 function resetStyle() {
     source.style.borderColor = "black";
 }
 
+function validate(){
+    var err = document.createElement("label");
+    err.innerText = "Не выбран источник";
+    rootForTable.appendChild(err);
+}
+
 function loadReport() {
+    rootForTable.innerHTML = "";
+
     if (date.value === "02.02.2020" && source.value === "Источник1") {
         list = JSON.parse(data1);
     } else if (date.value === "05.12.2020" && source.value === "Источник1") {
@@ -17,7 +26,8 @@ function loadReport() {
         list = JSON.parse(data4);
     } else if (source.value === "") {
         source.style.borderColor = "red";
-        list = [{"Не выбран источник": ""}];
+        validate();
+        return
     } else {
         list = [];
         console.error("Invalid input")
@@ -67,7 +77,5 @@ function loadReport() {
     }
 
     // Add the newely created table containing json data
-    var el = document.getElementById("table-scroll");
-    el.innerHTML = "";
-    el.appendChild(table);
+    rootForTable.appendChild(table);
 }
