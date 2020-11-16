@@ -25,3 +25,15 @@ select:invalid {
 option {
     color: black;
 }
+
+button{
+    width: 180px;
+    height: 26px;
+    border-width: 1px;
+}
+
+select{
+    width: 180px;
+    height: 26px;
+    border-width: 1px;
+}
