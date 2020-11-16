@@ -38,6 +38,7 @@ function loadReport() {
     // Create a table element
     var table = document.createElement("table");
     table.setAttribute('border', '1px');
+    table.setAttribute('align', 'center');
 
     // Create table row tr element of a table
     var tr = table.insertRow(-1);
@@ -66,7 +67,7 @@ function loadReport() {
     }
 
     // Add the newely created table containing json data
-    var el = document.getElementById("table");
+    var el = document.getElementById("table-scroll");
     el.innerHTML = "";
     el.appendChild(table);
 }
