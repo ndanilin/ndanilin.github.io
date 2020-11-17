@@ -6,7 +6,7 @@ var list;
 function createPDF(){
     var sTable = rootForTable.innerHTML;
 
-    if (document.querySelector("table") === null){
+    if (document.querySelector("table th") === null){
         console.error("the table is empty. you cannot create pdf");
     }
 
