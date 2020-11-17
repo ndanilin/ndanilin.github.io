@@ -6,7 +6,7 @@ var list;
 function createPDF(){
     var sTable = rootForTable.innerHTML;
 
-    if (document.querySelector("table th") === null){
+    if (document.querySelector("table") === null){
         console.error("the table is empty. you cannot create pdf");
     }
 
@@ -52,8 +52,8 @@ function loadReport() {
         validate();
         return
     } else {
-        list = [];
-        console.error("Invalid input")
+        console.error("Invalid input");
+        return;
     }
 
     var cols = [];
