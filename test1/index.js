@@ -1,6 +1,6 @@
 var date = document.getElementById("date");
 var source = document.getElementById("source");
-var rootForTable = document.getElementById("table-scroll");
+var rootForTable = document.getElementById("table-wrapper");
 var list;
 
 function exportCsv(){
